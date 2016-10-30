@@ -1,12 +1,12 @@
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
-#include <avr/power.h>
+  #include <avr/power.h>
 #endif
 
 #define PIN            6
 #define NUMPIXELS      60
-#define DELAY          30
 #define TRAIL_LENGTH   12
+#define DELAY          30
 
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
